@@ -1,0 +1,23 @@
+@media only screen and (min-width: 768px) {
+    header {
+        text-align: left;
+        padding: 1.5rem 3rem;
+    }
+
+    nav ul {
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    main {
+        max-width: 900px;
+        padding: 0 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+    }
+
+    figure {
+        text-align: center;
+    }
+}
