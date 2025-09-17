@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – Place Page</title>
+    <meta name="description"
+        content="Place page for WDD 131 – Dynamic Web Fundamentals. Includes hero image, place info, and weather.">
+    <meta name="author" content="Student Name">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>The Land of Saints and Scholars, Ireland</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="https://www.linkedin.com/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="project/">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/irelandsmall.webp" media="(max-width: 500px)">
+                <source srcset="images/ireland.webp" media="(max-width: 1000px)">
+                <img src="images/ireland.webp" alt="Scenic view of the place" width="1200" height="500">
+            </picture>
+        </section>
+
+        <!-- About Section -->
+        <section>
+            <h2>About Ireland</h2>
+            <p>
+                Ireland is a small island is western europe, that is well known for it's lush grasslands and rolling
+                hills, and plenty of Craic (The Irish Gaelic word for fun, often used by locals)
+                During most of it's modern history, Ireland was apart of the United Kingdom, but after a Rising in 1916
+                that lasted a week, full blown civil war lead to independent in 1923, and despite a Rocky history, it
+                now has a good reletionship with the UK, being each others largest trading partners.
+                Ireland is known for being very friendly, though some of this can be put down to the countries pension
+                for Alchol, it is still an amazing place to visit for anyone looking to explore a deep history,
+                plenitful vegetation, or make plenty of Friends
+            </p>
+        </section>
+
+        <!-- Weather Section -->
+        <section id="weather">
+            <h2>Weather</h2>
+            <p>Temperature: <span id="temperature"></span></p>
+            <p>Wind Speed: <span id="windspeed"></span></p>
+            <p>Wind Chill: <span id="windchill"></span></p>
+            <!-- SVG icon appears in mobile view (via CSS) -->
+            <h2 class="mobile-icon"><img src="images/weather.svg" alt="Weather icon"></h2>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Student Name | Your Country</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
