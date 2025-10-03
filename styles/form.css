@@ -1,0 +1,120 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eef6f6;
+    margin: 0;
+}
+
+header {
+    background: linear-gradient(90deg, #012a36, #026873);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+}
+
+main {
+    max-width: 650px;
+    margin: 2rem auto;
+    background-color: #d9f0f0;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.4rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    color: #012a36;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.optional {
+    font-size: 0.85rem;
+    color: #026873;
+    font-weight: 400;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    font-size: 1.8rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.rating label:hover,
+.rating label:hover~label {
+    color: #00b3b3;
+}
+
+.rating input:checked~label {
+    color: #00b3b3;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.submit-btn {
+    width: 100%;
+    background: linear-gradient(90deg, #026873, #012a36);
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.9rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(90deg, #012a36, #026873);
+    transform: translateY(-2px);
+}
+
+footer {
+    background: #012a36;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}

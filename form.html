@@ -1,0 +1,109 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Review</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Game Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <div class="form-group">
+                <label for="game">Game Title</label>
+                <select id="game" name="game" required>
+                    <option value="" disabled selected>Choose a Game ...</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Overall Rating</label>
+                <div class="rating">
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                    <label for="star5" title="5 stars">★</label>
+
+                    <input type="radio" id="star4" name="rating" value="4" required>
+                    <label for="star4" title="4 stars">★</label>
+
+                    <input type="radio" id="star3" name="rating" value="3" required>
+                    <label for="star3" title="3 stars">★</label>
+
+                    <input type="radio" id="star2" name="rating" value="2" required>
+                    <label for="star2" title="2 stars">★</label>
+
+                    <input type="radio" id="star1" name="rating" value="1" required>
+                    <label for="star1" title="1 star">★</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="firstPlayed">When did you first embark on this adventure?</label>
+                <input type="date" id="firstPlayed" name="firstPlayed" required>
+            </div>
+
+            <div class="form-group">
+                <label>What did you enjoy most about this game?</label>
+                <div class="features">
+                    <div>
+                        <input type="checkbox" id="feature1" name="features" value="Story / Narrative">
+                        <label for="feature1">Story / Narrative</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="feature2" name="features" value="Gameplay Mechanics">
+                        <label for="feature2">Gameplay Mechanics</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="feature3" name="features" value="Worldbuilding / Environment">
+                        <label for="feature3">Worldbuilding / Environment</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="feature4" name="features" value="Graphics & Art Style">
+                        <label for="feature4">Graphics & Art Style</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="feature5" name="features" value="Music & Sound Design">
+                        <label for="feature5">Music & Sound Design</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="feature6" name="features" value="Multiplayer / Community">
+                        <label for="feature6">Multiplayer / Community</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="feature7" name="features" value="Replayability">
+                        <label for="feature7">Replayability</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="reviewText">Favorite Moments / Comments <span class="optional">(Optional)</span></label>
+                <textarea id="reviewText" name="reviewText" placeholder="Share your epic adventures..."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="userName">Your Gamer Tag <span class="optional">(Optional)</span></label>
+                <input type="text" id="userName" name="userName" placeholder="PlayerOne">
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Press Start to Submit" class="submit-btn">
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Matthew Mooney | Ireland</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/form.js"></script>
+</body>
+
+</html>

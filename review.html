@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>✅ Review Submitted</h1>
+    </header>
+    <main>
+        <p>Your game review has been submitted successfully.</p>
+        <p>You have submitted <span id="reviewCount">0</span> reviews so far.</p>
+        <a href="index.html" class="submit-btn"
+            style="text-decoration:none;display:inline-block;text-align:center;">Submit Another Review</a>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Matthew Mooney | Ireland</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        const count = localStorage.getItem('reviewCount');
+        let newCount = count ? parseInt(count) + 1 : 1;
+        localStorage.setItem('reviewCount', newCount);
+        document.getElementById('reviewCount').textContent = newCount;
+    </script>
+</body>
+
+</html>
